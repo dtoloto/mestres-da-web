@@ -15,7 +15,12 @@ Faça a instalação de todas as dependências através do comando:
    	$ yarn install
 
 Utilize como modelo o arquivo `.env.example` e crie um arquivo chamado `.env` para configurar os dados da aplicação. 
-Configure, também, o seu banco de dados PostgreSQL, e rode as migrations com o seguinte comando:
+
+Para configurar seu banco de dados, crie uma imagem do PostgreSQL no Docker, através do comando:
+
+	$ docker run --name mestresDaWeb -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+	
+Em seguida, execute o comando para subir as migrations para o banco de dados, através do comando:
 
 	$ yarn sequelize db:migrate
 
