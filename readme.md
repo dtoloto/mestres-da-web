@@ -12,9 +12,13 @@ Este projeto foi criado para o processo seletivo da Mestres da Web. Ele consiste
 Faça a instalação de todas as dependências através do comando:
 		
 
-    $ yarn install
+   	$ yarn install
 
-Utilize como modelo o arquivo `.env.example` e crie um arquivo chamado `.env` para configurar os dados da aplicação.
+Utilize como modelo o arquivo `.env.example` e crie um arquivo chamado `.env` para configurar os dados da aplicação. 
+Configure, também, o seu banco de dados PostgreSQL, e rode as migrations com o seguinte comando:
+
+	$ yarn sequelize db:migrate
+
 
 Para a executar a api, utilize o comando:
 
@@ -74,9 +78,9 @@ Delete de Produtos: PUT `/stores/:store_id/products/:product_id`
 Faça a instalação de todas as dependências através do comando:
 		
 
-    $ yarn install
+   	$ yarn install
 
-Para a executar a api, utilize o comando:
+Para a executar a aplicação, utilize o comando:
 
 
 	$ yarn start
