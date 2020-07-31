@@ -39,7 +39,7 @@ Autenticação de usuário: POST `/sessions`
 			password: string
 		}
 
-Para os seguintes Endpoint, é necessário informar o `Bearer token` no header.
+Para os seguintes endpoints, é necessário informar o `Bearer token` no header.
 Criação de Lojas: POST `/stores`
 
 		{
